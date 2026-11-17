@@ -1,7 +1,7 @@
 <h1 align="center">meowed-at.me</h1>
 
 <p align="center"><strong>meowed-at.me</strong> is a free subdomain service made by <a href="https://github.com/doughmination">Clove Twilight</a
-
+<br> 
 <p align="center">
    <a href="https://discord.gg/KFEN5E3PyR"><img alt="Discord Server" src="https://inv.doughmination.gay/?inviteCode=KFEN5E3PyR"></a>
 </p>
