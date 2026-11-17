@@ -1,6 +1,6 @@
 <h1 align="center">meowed-at.me</h1>
 
-<p align="center"><strong>is-a.stupid.cat</strong> is a free subdomain service made by <a href="https://github.com/doughmination">Clove Twilight</a
+<p align="center"><strong>meowed-at.me</strong> is a free subdomain service made by <a href="https://github.com/doughmination">Clove Twilight</a
 
 <p align="center">
    <a href="https://discord.gg/"><img alt="Discord Server" src="https://invite.casperiv.dev?inviteCode="></a>
@@ -62,7 +62,7 @@ Please follow our ToS, which can be found [here](https://meowed-at.me/terms)
 > If your DNS has not propagated within 48 hours, please check with a [DNS Checker](https://dnschecker.org/all-dns-records-of-domain.php) before contacting us, so we can get you the best support.
 
 ## Documentation
-Our documentation is available [here](https://docs.meowed-at-me)!
+Our documentation is available [here](https://docs.meowed-at.me)!
 
 ### Similar Services
 If you want to find services that are similar to is-a.stupid.cat, please check out [Open Domains](https://github.com/open-domains/register), [is-a.dev](https://github.com/is-a-dev/register), [part-of.my.id](https://github.com/partofmyid/register), [is-not.cool](https://github.com/is-not-cool/registration) and any other subdomain provider available to the world.
