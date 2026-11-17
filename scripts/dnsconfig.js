@@ -111,7 +111,14 @@ for (var idx in domains) {
 
   if (domainData.records.MX) {
     for (var mx in domainData.records.MX) {
-      records.push(MX(subdomainName, 10, domainData.records.MX[mx] + "."));
+      var mxRecord = domainData.records.MX[mx];
+
+      // MX entries are a hostname string, or { target, priority }
+      if (typeof mxRecord === "object") {
+        records.push(MX(subdomainName, mxRecord.priority, mxRecord.target + "."));
+      } else {
+        records.push(MX(subdomainName, 10, mxRecord + "."));
+      }
     }
   }
 
@@ -122,8 +129,11 @@ for (var idx in domains) {
   }
 
   if (domainData.records.TXT) {
-    for (var txt in domainData.records.TXT) {
-      records.push(TXT(subdomainName, domainData.records.TXT[txt]));
+    // TXT may be one string or an array; for-in over a string walks its characters
+    var txtValues = typeof domainData.records.TXT === "string" ? [domainData.records.TXT] : domainData.records.TXT;
+
+    for (var txt in txtValues) {
+      records.push(TXT(subdomainName, txtValues[txt]));
     }
   }
 
