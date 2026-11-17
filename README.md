@@ -7,7 +7,7 @@
 </p>
 
 > [!WARNING]
-> We do not support Vercel at the moment since we are not on the PSL. Cloudflare does NOT work, due to recent changes meaning we'd need your NS records, and we have strict rules on who can and can't use NS records
+> We do not support Vercel at the moment since we are not on the PSL.
 
 ## Issues
 If you have any problems, feel free to [open an issue](https://github.com/meowed-at-me/register/issues/new/choose).
