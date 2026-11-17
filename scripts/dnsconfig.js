@@ -35,6 +35,14 @@ function stripJsonExt(filename) {
   return filename;
 }
 
+function endsWith(text, suffix) {
+  return text.length >= suffix.length && text.substring(text.length - suffix.length) === suffix;
+}
+
+// Paths in glob() and require() resolve from this file's folder, not the repo root
+var reservedNames = require('../json/reserved.json');
+var disallowedCnames = require('../json/disallowed-cnames.json');
+
 function getDomainsList(filesPath) {
   var result = [];
   var files = glob.apply(null, [filesPath, true, '.json']);
@@ -53,19 +61,24 @@ function getDomainsList(filesPath) {
 // build records
 // ---------------------------------------------------------------------------
 
-var domains = getDomainsList('./domains');
+var domains = getDomainsList('../domains');
 var records = [];
 
 for (var idx in domains) {
   var name = domains[idx].name;
   var domainData = domains[idx].data;
 
-  // a bad filename must never escape the is-a namespace
+  // a bad filename must never escape the meowed-at.me zone
   if (!isValidName(name)) {
     throw "Invalid domain file name: " + name;
   }
 
-  var subdomainName = name + '.';   // example -> example.
+  if (reservedNames.indexOf(name.split('.').pop()) !== -1) {
+    throw "Reserved domain name: " + name;
+  }
+
+  // Labels stay relative: a trailing dot would make them FQDNs outside the zone
+  var subdomainName = name;
   var proxyState = proxy.off;                         // disabled by default
 
   if (domainData.proxied === true) {
@@ -85,6 +98,14 @@ for (var idx in domains) {
   }
 
   if (domainData.records.CNAME) {
+    var cnameTarget = domainData.records.CNAME.toLowerCase();
+
+    for (var bad in disallowedCnames) {
+      if (endsWith(cnameTarget, disallowedCnames[bad])) {
+        throw "Disallowed CNAME target in " + name + ": " + cnameTarget;
+      }
+    }
+
     records.push(CNAME(subdomainName, domainData.records.CNAME + ".", proxyState));
   }
 

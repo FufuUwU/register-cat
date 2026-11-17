@@ -38,3 +38,10 @@ jobs:
                           issue_number: context.issue.number,
                           labels: ["reason: ai generated pr", "status: denied"]
                       });
+
+                      await github.rest.pulls.update({
+                          owner: context.repo.owner,
+                          repo: context.repo.repo,
+                          pull_number: context.issue.number,
+                          state: "closed"
+                      });

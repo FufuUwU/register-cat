@@ -1,7 +1,7 @@
 <h1 align="center">meowed-at.me</h1>
 
-<p align="center"><strong>meowed-at.me</strong> is a free subdomain service made by <a href="https://github.com/doughmination">Clove Twilight</a
-<br> 
+<p align="center"><strong>meowed-at.me</strong> is a free subdomain service made by <a href="https://github.com/doughmination">Clove Twilight</a></p>
+<br>
 <p align="center">
    <a href="https://discord.gg/KFEN5E3PyR"><img alt="Discord Server" src="https://inv.doughmination.gay/?inviteCode=KFEN5E3PyR"></a>
 </p>
@@ -11,8 +11,6 @@
 
 ## Issues
 If you have any problems, feel free to [open an issue](https://github.com/meowed-at-me/register/issues/new/choose).
-
-If you have an issue, please [open an issue](https://github.com/meowed-at-me/register/issues/new/choose).
 
 Please follow our ToS, which can be found [here](https://meowed-at.me/terms)
 
@@ -56,7 +54,7 @@ Please follow our ToS, which can be found [here](https://meowed-at.me/terms)
 
 4. Make a pull request to the repo and wait for it to be merged, if you don't know how to make a pull request please read [GitHub's guide](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request-from-a-fork).
 5. After the pull request is merged, the DNS records should propagate within the next 15-20 minutes, however in rarer cases, it can sometimes takes between 24-48 hours.
-6. That's all, enjoy your `is-a.stupid.cat` subdomain!
+6. That's all, enjoy your `meowed-at.me` subdomain!
 
 > [!NOTE]
 > If your DNS has not propagated within 48 hours, please check with a [DNS Checker](https://dnschecker.org/all-dns-records-of-domain.php) before contacting us, so we can get you the best support.
@@ -65,4 +63,4 @@ Please follow our ToS, which can be found [here](https://meowed-at.me/terms)
 Our documentation is available [here](https://docs.meowed-at.me)!
 
 ### Similar Services
-If you want to find services that are similar to is-a.stupid.cat, please check out [Open Domains](https://github.com/open-domains/register), [is-a.dev](https://github.com/is-a-dev/register), [part-of.my.id](https://github.com/partofmyid/register), [is-not.cool](https://github.com/is-not-cool/registration) and any other subdomain provider available to the world.
+If you want to find services that are similar to meowed-at.me, please check out [Open Domains](https://github.com/open-domains/register), [is-a.dev](https://github.com/is-a-dev/register), [part-of.my.id](https://github.com/partofmyid/register), [is-not.cool](https://github.com/is-not-cool/registration) and any other subdomain provider available to the world.
