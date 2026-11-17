@@ -65,7 +65,7 @@ for (var idx in domains) {
     throw "Invalid domain file name: " + name;
   }
 
-  var subdomainName = name + '.';   // example -> example.is-a
+  var subdomainName = name + '.';   // example -> example.
   var proxyState = proxy.off;                         // disabled by default
 
   if (domainData.proxied === true) {
