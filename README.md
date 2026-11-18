@@ -63,4 +63,4 @@ Please follow our ToS, which can be found [here](https://meowed-at.me/terms)
 Our documentation is available [here](https://docs.meowed-at.me)!
 
 ### Similar Services
-If you want to find services that are similar to meowed-at.me, please check out [Open Domains](https://github.com/open-domains/register), [is-a.dev](https://github.com/is-a-dev/register), [part-of.my.id](https://github.com/partofmyid/register), [is-not.cool](https://github.com/is-not-cool/registration) and any other subdomain provider available to the world.
+If you want to find services that are similar to meowed-at.me, please check out [is-a.stupid.cat](https://github.com/is-a-stupid-cat/register), [has-a.space](https://github.com/has-a-space/register), [is-a.bot](https://github.com/free-domains/is-a.bot), [is-a.dev](https://github.com/is-a-dev/register) and any other subdomain provider available to the world.
